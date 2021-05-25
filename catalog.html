@@ -37,14 +37,14 @@
       <ul>
         <li><a href="#"></a>Главная</li>
         <li><a href="#"></a>Каталог товаров</li>
-        <li><a href="catalog.html">Моноподы для селфи</a></li>
+        <li>Моноподы для селфи</li>
       </ul>
 
       <section>
         <h2>Фильтр:</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
-          <div class="price-range">
-            <h3>Стоимость</h3>
+          <fieldset>
+            <legend>Стоимость</legend>
             <div class="price-range-line">
               <div class="price-range-line-setected"></div>
             </div>
@@ -56,7 +56,9 @@
               <span class="handle-button"></span>
               <span>до 5000</span>
             </div>
-          </div>
+            <input class="price-min" type="text" value="0">
+            <input class="price-max" type="text" value="5000">
+          </fieldset>
 
           <fieldset>
             <legend>Цвет</legend>
@@ -106,20 +108,17 @@
         <h2>Cортировка:</h2>
         <ul>
           <li>
-            <input type="radio" name="sort" id="sort-price" value="price" checked>
-            <label for="sort-price">По цене</label>
+            <a href="#">По цене</a>
           </li>
           <li>
-            <input type="radio" name="sort" id="sort-type" value="type">
-            <label for="sort-type">По типу</label>
+            <a href="#">По типу</a>
           </li>
           <li>
-            <input type="radio" name="sort" id="sort-popular" value="popular">
-            <label for="sort-popular">По популярности</label>
+            <a href="#">По популярности</a>
           </li>
         </ul>
-        <button type="button" class="sort-btn sort-btn--down">sort down</button>
-        <button type="button" class="sort-btn sort-btn--up">sort up</button>
+        <a href="#" class="sort-direction sort-btn--down">sort down</a>
+        <a href="#" class="sort-direction sort-btn--up">sort up</a>
       </section>
 
       <section>
@@ -127,7 +126,7 @@
         <ul>
           <li>
             <div class="product">
-              <h3>Любительская селфи-палка</h3>
+              <a href="blank.html">Любительская селфи-палка</a>
               <p><img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Простая черная селфипалка с включенным смартфоном на борту"></p>
               <p><span>1 100</span><span>руб.</span></p>
             </div>
@@ -139,7 +138,7 @@
 
           <li>
             <div class="product">
-              <h3>Профессиональная селфи-палка</h3>
+              <a href="blank.html">Профессиональная селфи-палка</a>
               <p><img src="https://via.placeholder.com/360x380" width="360" height="380" alt="навороченная черная селфипалка, солидно выглядящая"></p>
               <p><span>1 500</span><span>руб.</span></p>
             </div>
@@ -151,7 +150,7 @@
 
           <li>
             <div class="product">
-              <h3>Непотопляемая селфи-палка</h3>
+              <a href="blank.html">Непотопляемая селфи-палка</a>
               <p><img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Селфипалка с плоской ручкой, с кислотно-желтыми верхней и нижней частью, с установленной камерой GoPro"></p>
               <p><span>1 500</span><span>руб.</span></p>
             </div>
@@ -163,7 +162,7 @@
 
           <li>
             <div class="product">
-              <h3>Селфи-палка «Следуй за мной»</h3>
+              <a href="blank.html">Селфи-палка «Следуй за мной»</a>
               <p><img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Селфипалка в виде руки до локтя, рука в черном рукаве от блузки, в районе локтя расположено крепление для смартфона"></p>
               <p><span>1 900</span><span>руб.</span></p>
             </div>
@@ -186,40 +185,38 @@
 
     <footer>
       <!-- подвал из трех колонок -->
-      <ul>
-        <li>
-          <a href="/">
-            <img src="img/index-logo-footer.svg" width="163" height="35" alt="Логотип «Device»">
-          </a>
+      <div>
+        <a href="/">
+          <img src="img/index-logo-footer.svg" width="163" height="35" alt="Логотип «Device»">
+        </a>
 
-          <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-        </li>
+        <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+      </div>
 
-        <li>
-          <!-- Сервисы -->
-          <ul>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-          <!-- Мы в соцсетях -->
-          <ul>
-            <li>facebook</li>
-            <li>instagram</li>
-            <li>twitter</li>
-          </ul>
-        </li>
+      <div>
+        <!-- Сервисы -->
+        <ul>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <!-- Мы в соцсетях -->
+        <ul>
+          <li>facebook</li>
+          <li>instagram</li>
+          <li>twitter</li>
+        </ul>
+      </div>
 
-        <li>
-          <ul>
-            <li><a href="#">Валентин петухов</a><button type="button">Выйти</button></li>
-            <li><a href="#">Сравнить</a></li>
-            <li><a href="#">Крозина</a></li>
-          </ul>
-          <p>Тел.: +7 800 555-86-28</p>
-          <a href="https://htmlacademy.ru"><img src="https://via.placeholder.com/115x33" width="115" height="33" alt=""></a>
-        </li>
-      </ul>
+      <div>
+        <ul>
+          <li><a href="#">Валентин Петухов</a><button type="button">Выйти</button></li>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Крозина</a></li>
+        </ul>
+        <p>Тел.: +7 800 555-86-28</p>
+        <a href="https://htmlacademy.ru"><img src="https://via.placeholder.com/115x33" width="115" height="33" alt=""></a>
+      </div>
     </footer>
   </body>
 </html>
